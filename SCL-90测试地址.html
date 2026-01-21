@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   	<title> HTML/CSS/JS 在线工具 | 菜鸟工具</title>
+     	<meta name='robots' content='max-image-preview:large' />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='wpProQuiz_front_style-css' href='https://www.jyshare.com/wp-content/plugins/Wp-Pro-Quiz/css/wpProQuiz_front.min.css?ver=0.37' type='text/css' media='all' />
+<link rel="canonical" href="https://www.jyshare.com/front-end/61/" />
+<meta name="keywords" content="HTML/CSS/JS 在线工具">
+<meta name="description" content="通过 HTML/CSS/JS 在线工具，你可以在线输入 HTML 、CSS、JS 代码，该工具能实时显示运行效果。..">
+  <link rel="shortcut icon" href="https://static.jyshare.com/images/c-runoob-logo.ico">  
+			<script src="https://static.jyshare.com/assets/CodeMirror/lib/codemirror.min.js"></script>
+		<script src="https://static.jyshare.com/assets/CodeMirror/addon/mode/simple.js"></script>
+		<link rel="stylesheet" href="https://static.jyshare.com/assets/CodeMirror/lib/codemirror.min.css" >
+    <link rel="stylesheet" href="https://static.jyshare.com/assets/CodeMirror/theme/material.css" >
+    
+				
+		<script src="https://static.jyshare.com/assets/CodeMirror/mode/htmlmixed/htmlmixed.js"></script>
+				
+		<script src="https://static.jyshare.com/assets/CodeMirror/mode/css/css.js"></script>
+				
+		<script src="https://static.jyshare.com/assets/CodeMirror/mode/javascript/javascript.js"></script>
+				
+		<script src="https://static.jyshare.com/assets/CodeMirror/mode/xml/xml.js"></script>
+						<script src="https://www.jyshare.com/wp-content/themes/toolrunoob2/assets/js/format.js"></script>
+						
+    	
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://static.jyshare.com/assets/css/tool-bs/bootstrap.min.css" >
+
+   <!-- Custom Fonts -->
+   <link href="https://static.jyshare.com/assets/fontawesome-free-5.15.4/css/all.min.css" rel="stylesheet">
+    <!--[if lt IE 9]> 
+        <script src="https://static.jyshare.com/assets/libs/html5.min.js"></script>
+        <script src="https://static.jyshare.com/assets/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- PHP 代码 -->
+    <link rel="stylesheet" href="https://www.jyshare.com/wp-content/themes/toolrunoob2/style.css?version=1.405">
+
+    <script src="https://static.jyshare.com/assets/libs/jquery.min.js"></script>
+  <script src="https://static.jyshare.com/assets/libs/clipboard.min.js"></script>
+</head>
+
+<body>
+<style>
+
+.navbar-nav .nav-item {
+  white-space: nowrap; /* 防止li内部换行 */
+}
+
+.navbar-nav .nav-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* 防止链接文字换行 */
+}
+.navbar,.page-footer {
+
+background: rgb(75, 81, 104);
+border-width: 0px 0px 3px;
+border-bottom: 3px solid transparent;
+border-image: linear-gradient(90deg, rgb(141, 66, 108) 16%, rgb(81, 153, 211) 16%, rgb(81, 153, 211) 32%, rgb(34, 201, 148) 32%, rgb(34, 201, 148) 48%, rgb(240, 198, 18), 48%, rgb(240, 198, 18), 64%, rgb(255, 171, 77) 64%, rgb(255, 171, 77) 82%, rgb(210, 70, 93) 82%) 1 / 1 / 0 stretch;
+}
+.page-footer {
+  border-top: 3px solid transparent;
+  border-width: 3px 0px 0px;
+}
+</style>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark "> 
+  <a class="navbar-brand mr-auto mr-lg-2" href="/">
+  <img src="https://static.jyshare.com/images/JYSHARE-COM.png" style="height: 36px;"  class="d-inline-block align-top" alt="菜鸟工具">
+     </a>
+  <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item nav-item-runoob">
+	  <a target="_blank" class="nav-link" href="https://www.jyshare.com/front-end/61">WEB在线工具</a>
+      </li>
+    
+      <li class="nav-item nav-item-runoob">
+	  <a target="_blank nav-item-runoob" class="nav-link" href="https://www.jyshare.com/more/shapefly-diagram/">在线画图</a> 
+      </li>
+      
+   
+     <!-- 
+      <li class="nav-item">
+	  <a target="_blank" class="nav-link" href="https://www.jyshare.com/email/">邮箱导航</a>
+      </li>
+       <li class="nav-item">
+	  <a target="_blank" class="nav-link" href="https://www.jyshare.com/currencyconverter/">汇率换算器</a>
+      </li>
+    
+     
+     
+      
+     
+-->
+     
+      
+      <li class="nav-item">
+	  <a target="_blank" class="nav-link" href="https://www.jyshare.com/time/">世界时间</a>
+      </li>
+      <li class="nav-item nav-item-runoob">
+	  <a target="_blank" class="nav-link" href="https://www.jyshare.com/more/svgeditor/">SVG在线工具</a>
+      </li>
+     
+	  <li class="nav-item nav-item-runoob">
+	  <a target="_blank" class="nav-link" href="https://www.runoob.com/">菜鸟教程</a>
+      </li>
+                  <li class="nav-item nav-item-runoob">
+	    <a target="_blank" class="nav-link" href="https://www.jyshare.com/ai/">AI集合</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown01" data-toggle="dropdown" aria-expanded="false">更多频道</a>
+        <style>
+        .multi-column-dropdown {
+            column-count: 2; /* 设置两列 */
+            column-gap: 1rem; /* 列之间的间隔 */
+        }
+        </style> 
+        <div class="dropdown-menu multi-column-dropdown shadow bg-light">
+    
+        <div class="dropdown-column">
+        <a href="https://www.jyshare.com/email/" class="dropdown-item" target="_blank"><i class="fas fa-envelope"></i> 邮箱导航</a>
+		     <a href="https://www.jyshare.com/web-developer/" class="dropdown-item" target="_blank"><i class="fab fa-html5"></i> 前端开发</a>
+         <a href="https://www.jyshare.com/media-om/" class="dropdown-item" target="_blank"><i class="fas fa-photo-video"></i> 媒体运营</a>
+         <a href="https://www.jyshare.com/tech-sites/" class="dropdown-item" target="_blank"><i class="fas fa-microchip"></i> 科技网站</a>
+         <a href="https://www.jyshare.com/cloud-server/" class="dropdown-item" target="_blank"><i class="fas fa-server"></i> 云服务器</a>
+         <a href="https://www.jyshare.com/office/" class="dropdown-item" target="_blank"><i class="fab fa-microsoft"></i> 办公软件</a>
+         <a href="https://www.jyshare.com/scholar/" class="dropdown-item" target="_blank"><i class="fas fa-search-plus"></i> 学术搜索</a>
+         <a href="https://www.jyshare.com/time/" class="dropdown-item" target="_blank"><i class="far fa-clock"></i> 世界时间</a>
+    </div>
+    <div class="dropdown-column">
+         <a href="https://www.jyshare.com/ai/" class="dropdown-item" target="_blank"><i class="fas fa-robot"></i> AI 应用</a>
+         <a href="https://www.jyshare.com/coupon/" class="dropdown-item" target="_blank"><i class="fas fa-shopping-cart"></i> 购物平台</a>
+         <a href="https://www.jyshare.com/quiz/" class="dropdown-item" target="_blank"><i class="fas fa-feather"></i> 在线测验</a>
+         <a href="https://www.jyshare.com/finance/" class="dropdown-item" target="_blank"><i class="fas fa-piggy-bank"></i> 财经频道</a>
+         <a href="https://www.jyshare.com/banks/" class="dropdown-item" target="_blank"><i class="fas fa-landmark"></i> 银行机构</a>
+         <a href="https://www.jyshare.com/danwei/" class="dropdown-item" target="_blank"><i class="fas fa-weight"></i> 单位换算</a>
+         <a href="https://www.jyshare.com/sports/" class="dropdown-item" target="_blank"><i class="fas fa-basketball-ball"></i> 体育频道</a>
+         <a href="https://www.jyshare.com/rmbquot/" class="dropdown-item" target="_blank"><i class="fas fa-funnel-dollar"></i> 人民币汇率</a>
+    </div>
+        </div>
+      </li>
+  
+    </ul>
+    <style>
+   
+</style>
+    <form class="form-inline my-2 my-lg-0" action="/index.php" method="get">
+	      <div class="input-group has-search">
+     
+      <input class="form-control mr-sm-2" name="s" value="" type="text" placeholder="搜索..." aria-label="Search">
+     
+    </div>
+<!--
+      <button class="btn btn-warning my-2 my-sm-0" type="submit" >搜索</button>  -->
+    </form>
+      </div>
+</nav>
+<script>
+var is_home = false;
+</script>
+<style>
+.runoob-page-content {
+    margin: 0 20px;
+}
+</style>
+
+
+<div class="runoob-page-content"><link rel="stylesheet" href="https://static.jyshare.com/assets/jqwidgets/styles/jqx.base.css" type="text/css" />
+<link rel="stylesheet" href="https://static.jyshare.com/assets/CodeMirror/theme/material.css">
+<script type="text/javascript" src="https://static.jyshare.com/assets/jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="https://static.jyshare.com/assets/jqwidgets/jqxsplitter.js"></script>
+<script src="https://static.jyshare.com/assets/CodeMirror/addon/edit/closetag.js"></script>
+<script src="https://static.jyshare.com/assets/CodeMirror/addon/edit/closebrackets.js"></script>
+<script src="https://static.jyshare.com/assets/CodeMirror/addon/display/placeholder.js"></script>
+<script src="https://static.jyshare.com/assets/libs/download.min.js"></script> 
+<script src="/wp-content/themes/toolrunoob2/assets/js/beautify-html.min.js"></script>
+<style type="text/css">
+.container{ 
+    width: 100%;
+}
+
+.CodeMirror {
+    border: 0px solid #fff; 
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+}
+.CodeMirror-gutters {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+/*
+.CodeMirror pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: keep-all;
+}*/
+table td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.modal-dialog  {
+    width: 800px;
+}
+#output {
+    width: 100%;
+    height: 100%;
+}
+#iframeResult {
+    display:block;
+    overflow:hidden;
+    border:0!important;
+    min-width:100px;
+    width:100%;
+    height:100%;
+    background-color:#fff
+}
+</style>
+    
+
+<div class="row" id="runoob-content">
+    <div class="col-md-12">
+        <div class="card">
+            
+            <div class="card-header">
+            <form class="form-inline" role="form">
+            
+            <label style="margin-right:12px;"><strong style="font-size: 16px"><i class="fa fa-cogs"></i> HTML/CSS/JS 在线工具</strong></label>
+
+                                                     <!-- <button type="button" class="btn btn-warning" id="librep">选择库</button>-->
+                   <button type="button" class="btn btn-info mr-sm-1" id="basehtml"><i class="fab fa-html5"></i> HTML 模板</button>
+                 <a href="https://www.jyshare.com/examples/" class="btn btn-dark mr-sm-1" target="_blank"><i class="fas fa-th-list"></i> 案例</a>
+                 <div class="form-group">
+                 <select class="custom-select  mr-sm-1" id="sel1">
+                 <option value="nourl" selected="selected"> 选择库...</option>
+                 <option value="jq">使用 jQuery 2.2.4</option>
+                 <option value="bs3">使用 Bootstrap 3</option>
+                 <option value="bs4">使用 Bootstrap 4</option>
+                 <option value="bs5">使用 Bootstrap 5</option>
+                 <option value="ag">使用 Angular 1.6.6</option>
+                 <option value="vue2">使用 Vue 2.2.2</option>
+                 <option value="vue3">使用 Vue 3.2.33</option>
+                 <option value="fa">使用 Font Awesome 4.7.0</option> 
+                 <option value="more">更多……</option>
+                   </select>
+                 <button type="button" class="btn btn-warning mr-sm-1" id="downloadCode"><i class="fas fa-cloud-download-alt"></i> 下载</button>
+                 <button type="button" class="btn btn-primary mr-sm-1" id="runcode"><i class="fa fa-paper-plane"></i> 运行</button>
+                 <label>
+                <input type="checkbox" id="isautorun">自动执行
+                </label>
+
+                <label><span class="badge badge-danger">外部资源请使用 https 协议</span> </label>
+                   </div>
+                  
+                 
+                        <div class="form-group alert alert-danger" style="display:none;padding: 6px;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span> 错误！请进行一些更改。</span></div>
+
+            </form>
+    
+             </div>
+             <div class="card-body" style="padding:0;"> 
+             <form role="form" id="compiler-form">
+             <div id="splitContainer">
+                <div>
+                    <div id="leftSplitter">
+                        <div>
+                            <textarea placeholder="输入 HTML 代码……" id="code-html"  class="form-control" name="code" rows="11"></textarea>
+                            <a href="javascript:void(0);" class="windowLabel" data-panel="js">
+                                <span class="label">
+                                    HTML
+                                </span>
+                                <i class="fab fa-html5"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <textarea placeholder="输入 JavaScript 代码……" id="code-js" class="form-control" name="code" rows="10"></textarea>
+                            <a href="javascript:void(0);" class="windowLabel" data-panel="js">
+                                <span class="label">
+                                    JavaScript
+                                </span>
+                                <i class="fab fa-js"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="rightSplitter">
+                        <div>
+                            <textarea placeholder="输入 CSS 代码……" id="code-css" class="form-control" rows="11"></textarea>
+                            <a href="javascript:void(0);" class="windowLabel" data-panel="js">
+                                <span class="label">
+                                    CSS
+                                </span>
+                                <i class="fab fa-css3-alt"></i>
+                            </a>
+                        </div>
+                        <div id="output">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title"> 生成链接</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+           <div class="input-group">
+           <div class="input-group-prepend"><span class="input-group-text">标题</span></div> 
+             <input type="text" id="post_title" class="form-control" placeholder="请输入标题……">
+              </div><br>
+              <div class="alert alert-warning">提示！对于发布的内容我们会定期审核，对于违规或错误代码会进行删除处理。</div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-outline-success" id="save">
+               保存代码
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+
+<!-- 模态框（Modal）扩展库 -->
+<div class="modal fade" id="libs" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">扩展库</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+           
+           
+         </div>
+         <div class="modal-body">
+          <form role="form">
+                  <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text">输入库名：</span></div>
+                    <input type="text" class="form-control" id="filter" placeholder="搜索扩展库……">
+                </div>
+                <i id="fa-spinner" class="fa fa-spinner fa-pulse fa-3x fa-fw" style="display: none;padding: 10px;"></i>
+                <table id="libs-table" class="table table-striped mt-2"></table>
+
+            </form>
+         </div>
+         
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    var winHeight=0;
+    if (window.innerHeight) {
+        winHeight = window.innerHeight;
+    } else if ((document.body) && (document.body.clientHeight)) {
+        winHeight = document.body.clientHeight;
+    }
+    //通过深入Document内部对body进行检测，获取浏览器窗口高度
+    if (document.documentElement && document.documentElement.clientHeight) {
+        winHeight = document.documentElement.clientHeight;
+    }
+    $("#runcode").click(function() {
+        submitTryit();
+    }) ;
+    $("#downloadCode").click(function() {
+        
+       // downloadCode = html_beautify(document.getElementById("iframeResult").contentWindow.document.documentElement.outerHTML,  { indent_size: 4, space_in_empty_paren: true });    
+	    downloadCode = html_beautify(text,  { indent_size: 4, space_in_empty_paren: true });    
+        download(downloadCode, "runoob-test.html", "text/html");
+    }) ;
+    $("#isautorun").prop( "checked", true );
+    height = (winHeight - 60) * 0.86;
+    $('#splitContainer').jqxSplitter({ height: height, width: '100%', orientation: 'vertical', panels: [{ size: '50%' }, { size: '50%' }] });
+    $('#leftSplitter').jqxSplitter({ height: '100%', width: '100%', orientation: 'horizontal',  panels: [{ size: '50%' }, { size: '50%'}] });
+    $('#rightSplitter').jqxSplitter({ height: '100%', width: '100%', orientation: 'horizontal',  panels: [{ size: '50%' }, { size: '50%'}] });
+});
+// CM OPTIONS
+var cm_opt = {
+    mode: 'text/html',
+    gutter: true,
+    lineNumbers: true,
+    autoCloseBrackets:true,
+    lineWrapping: true,
+    matchBrackets: true,
+    //theme:'material',
+    autoCloseTags:true
+};
+// HTML EDITOR
+var html_box = document.querySelector('#code-html');
+var html_editor = CodeMirror.fromTextArea(html_box, cm_opt);
+
+//var isautorun = $('#isautorun').prop('checked');
+html_editor.on('change',function (inst, changes) {
+if($('#isautorun').prop('checked')) {
+    submitTryit();
+}
+    
+});
+// CSS EDITOR
+cm_opt.mode = 'css';
+var css_box = document.querySelector('#code-css');
+var css_editor = CodeMirror.fromTextArea(css_box, cm_opt);
+
+    css_editor.on('change', function (inst, changes) {
+    if($('#isautorun').prop('checked')) {
+            submitTryit();
+    }
+    });
+
+// JAVASCRIPT EDITOR
+cm_opt.mode = 'javascript';
+var js_box = document.querySelector('#code-js');
+var js_editor = CodeMirror.fromTextArea(js_box, cm_opt);
+
+    
+    js_editor.on('change', function (inst, changes) {
+    if($('#isautorun').prop('checked')) {
+            submitTryit();
+    }
+    });
+    
+    $("#basehtml").click(function() {
+    _html_code = "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>文档标题</title>\n</head>\n<body>\n\t<h1>我的第一个HTML页面</h1>\n\t<p>我的第一个段落。</p>\n</body>\n</html>\n";
+    html_editor.getDoc().setValue(_html_code);
+});
+
+
+$("#librep").click(function(){ $("#libs").modal("show"); });
+$( "select" ).change(function() {
+    const selectedValue = $(this).val();
+    const initialHtmlCode = html_editor.getValue();
+
+    const htmlScripts = {
+        'more': () => $("#libs").modal("show"),
+        'jq': "<script src=\"https://cdn.staticfile.net/jquery/3.6.0/jquery.min.js\"><\/script>\n",
+        'bs3': "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css\">\n<script src=\"https://cdn.staticfile.net/jquery/3.6.0/jquery.min.js\"><\/script>\n<script src=\"https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js\"><\/script>\n",
+        'bs4': "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.net/twitter-bootstrap/4.6.0/css/bootstrap.min.css\">\n<script src=\"https://cdn.staticfile.net/jquery/3.6.0/jquery.min.js\"><\/script>\n<script src=\"https://cdn.staticfile.net/twitter-bootstrap/4.6.0/js/bootstrap.min.js\"><\/script>\n",
+        'bs5': "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.net/twitter-bootstrap/5.1.3/css/bootstrap.min.css\">\n<script src=\"https://cdn.staticfile.net/jquery/3.6.0/jquery.min.js\"><\/script>\n<script src=\"https://cdn.staticfile.net/twitter-bootstrap/5.1.3/js/bootstrap.min.js\"><\/script>\n",
+        'ag': "<script src=\"https://cdn.staticfile.net/angular.js/1.6.6/angular.min.js\"><\/script>\n",
+        'vue2': "<script src=\"https://cdn.staticfile.net/vue/2.2.2/vue.min.js\"><\/script>\n",
+        'vue3': "<script src=\"https://cdn.staticfile.net/vue/3.2.33/vue.global.js\"><\/script>\n",
+        'fa': "<link rel=\"stylesheet\" href=\"https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.min.css\">\n"
+    };
+
+    if (htmlScripts[selectedValue]) {
+        if (typeof htmlScripts[selectedValue] === 'function') {
+            htmlScripts[selectedValue]();
+        } else {
+            html_editor.getDoc().setValue(htmlScripts[selectedValue] + initialHtmlCode);
+        }
+    }
+});
+
+$('#libs').on('hidden.bs.modal', function () {
+    $("#sel1 option:first-child").attr('selected', true);
+    $("#sel1 option:last-child").attr('selected', false);
+    $("#libs-table tr").removeClass("success");
+})
+
+
+// 防抖函数，减少频繁请求
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
+$("#filter").keyup(debounce(function() {
+    const searchValue = $(this).val().trim();
+
+    // 如果搜索值为空，清空表格并返回
+    if (!searchValue) {
+        $("#libs-table").html('<tr><th>库名</th><th>地址</th><th>插入</th></tr>');
+        return;
+    }
+
+    // 显示加载动画
+    $("#fa-spinner").show();
+
+    // 发起请求
+    $.get('https://api.cdnjs.com/libraries', { search: searchValue, fields: "homepage" }, function(data) {
+        // 构建表格内容
+        const rows = data.results.slice(0, 10).map(item => `
+            <tr>
+                <td>${item.name}</td>
+                <td>${item.latest}</td>
+                <td>&nbsp;&nbsp;<i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;</td>
+            </tr>
+        `).join('');
+
+        // 更新表格
+        if (rows) {
+            $("#libs-table").html(`<tr><th>库名</th><th>地址</th><th>插入</th></tr>${rows}`);
+        } else {
+            $("#libs-table").html('<tr><th>库名</th><th>地址</th><th>插入</th></tr>');
+        }
+    }).fail(function() {
+        // 请求失败处理
+        alert("请求失败，请稍后重试。");
+    }).always(function() {
+        // 隐藏加载动画
+        $("#fa-spinner").hide();
+    });
+}, 300)); // 设置防抖时间为 300ms
+
+$( document ).ajaxComplete(function() {
+    $("tr").not(':first').hover(
+        function () {
+            if(!$(this).hasClass("success")) {
+                $(this).addClass("warning");
+            }
+        },
+        function () {
+            $(this).removeClass("warning");
+        }
+    );
+    $("tr").not(':first').click(function() {
+        if(!$(this).hasClass("success")) {
+            _editor_content = html_editor.getValue();
+            $(this).addClass("success")
+            $(this).removeClass("warning");
+            _libsrc = $(this).find("td").eq(1).text();
+            if(_editor_content.indexOf(_libsrc) !== -1 ) {
+                return;
+            }
+            if( _libsrc.indexOf('.js')!==-1 ){
+                _libsrc = '<script src="'+_libsrc+'"><\/script>\n';
+            } else if(_libsrc.indexOf('.css')!==-1) {
+                _libsrc = '<link rel="stylesheet" href="'+_libsrc+'">\n';
+            } 
+            
+            patternBody = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
+            array_matches_body = patternBody.exec(_editor_content);
+            patternHead = /<head[^>]*>((.|[\n\r])*)<\/head>/im;
+            array_matches_head = patternHead.exec(_editor_content); 
+            
+            if(array_matches_head) {
+                _editor_content = _editor_content.replace('</head>', _libsrc + '</head>');
+                
+            } else if(array_matches_body) {
+                _editor_content = _editor_content.replace('</body>', _libsrc + '</body>');
+            } else {
+                _editor_content = _libsrc + _editor_content;
+            }
+            html_editor.getDoc().setValue(_editor_content);
+        } 
+    });
+});
+
+$("#save").click(function() {
+    post_title = $("#post_title").val().trim();
+    var isnum = /^\d+$/.test(post_title);
+    var isletter = /^[a-zA-Z]+$/.test(post_title);
+    if( isnum ) {
+        alert("请认真填写标题！");
+    } else if( isletter ) {
+        alert("加点中文描述，大家更容易理解！");
+    }else if(post_title=="" || post_title.length<6) {
+        alert("标题不能为空且不能少于6个字符……");
+    } else {
+        var htmlSource = html_editor.getValue(),
+        cssSource = css_editor.getValue(),
+        jsSource = js_editor.getValue(),
+        post_content = '';
+        if(htmlSource!='' || jsSource!='' || cssSource!='') {
+            $.post("/savecode.php", {post_title:post_title, html: htmlSource, js: jsSource, css:cssSource,filename: ""}, function(data){
+                
+                if(data.errno) {
+                    alert(data.msg)
+                } else {
+                    $("#save").prop('disabled',false);
+                    alert(data.msg)
+                    window.location.href = data.url
+                }
+                
+            }, "json");
+        } else {
+            alert("请输入你要展示的代码……");
+        }
+    }
+        
+});
+html_editor.setSize('100%','100%');
+js_editor.setSize('100%', '100%');
+css_editor.setSize('100%','100%');
+
+
+function submitTryit() {
+    // 基础模板
+    
+    var html = html_editor.getValue(),
+    css = css_editor.getValue(),
+    js = js_editor.getValue(),
+    src = html;
+    if (html) {
+        var patternHtmlTag = /<html([^>]*)>/im;
+        var array_matches_html_tag = patternHtmlTag.exec(src);
+        if (array_matches_html_tag) {
+            src = src.replace('<html>', '<html ' + array_matches_html_tag[1] + '>');
+        }
+        var patternHead = /<head[^>]*>((.|[\n\r])*)<\/head>/im
+        var array_matches_head = patternHead.exec(src);
+
+        var patternBodyTag = /<body([^>]*)>/im;
+        var array_matches_body_tag = patternBodyTag.exec(src);
+        if (array_matches_body_tag) {
+            src = src.replace('<body>', '<body ' + array_matches_body_tag[1] + '>');
+        } 
+        
+    } 
+    //console.log(css);
+    if (css.indexOf('<style>') !== -1) {
+        $(".alert-danger span").text('CSS 编辑框不需要 <style> 标签');
+        $(".alert-danger").show().delay(5000).fadeOut();
+        return;
+    } else if (js.indexOf('<script>') !== -1) {
+        $(".alert-danger span").text('JavaScript 编辑框不需要 <script> 标签');
+        $(".alert-danger").show().delay(5000).fadeOut();
+        return;
+    } else {
+        $(".alert-danger").hide();
+    }
+
+    // CSS
+    if(css) {
+        css = '\n<style>\n' + css + '\n</style>\n';
+        if (array_matches_head) {
+            src = src.replace('</head>', css + '</head>');
+        } else if (array_matches_body_tag) {
+            src = src.replace('</body>', css + '</body>');
+        } else {
+            src +=  css;
+        }
+    }
+
+    // Javascript
+    if(js) {
+        js = '\n<script>\n' + js + '\n<\/script>\n';
+        if (array_matches_body_tag) {
+            src = src.replace('</body>', js + '</body>');
+        }else {
+            src +=  js;
+        }
+    }
+
+    text = src;
+    var ifr = document.createElement("iframe");
+    ifr.setAttribute("frameborder", "0");
+    ifr.setAttribute("id", "iframeResult");
+    document.getElementById("output").innerHTML = "";
+    document.getElementById("output").appendChild(ifr);
+
+    var ifrw = (ifr.contentWindow) ? ifr.contentWindow: (ifr.contentDocument.document) ? ifr.contentDocument.document: ifr.contentDocument;
+    ifrw.document.open();
+    ifrw.document.write(text);
+    ifrw.document.close();
+    autodivheight();
+}
+submitTryit();
+window.addEventListener("resize", autodivheight);
+function autodivheight(){
+    var winHeight=0;
+    if (window.innerHeight) {
+        winHeight = window.innerHeight;
+    } else if ((document.body) && (document.body.clientHeight)) {
+        winHeight = document.body.clientHeight;
+    }
+    //通过深入Document内部对body进行检测，获取浏览器窗口高度
+    if (document.documentElement && document.documentElement.clientHeight) {
+        winHeight = document.documentElement.clientHeight;
+    }
+    height = height = (winHeight - 60) * 0.86;
+    document.getElementById("splitContainer").style.height= height +"px";
+}
+</script>
+
+</div>
+
+
+<script src="https://static.jyshare.com/assets/bootstrap/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?68c6d4f0f6c20c5974b17198fa6fd40a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKSTK8N4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BKSTK8N4K');
+</script>
+</div>
+</body>
+
+</html>
